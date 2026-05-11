@@ -1,0 +1,166 @@
+Data Preprocessing
+This is where most beginners fail.
+Companies know:
+a bad model with clean data can still work,
+but a great algorithm with bad data usually fails.
+
+
+1. What is Data Preprocessing?
+Data preprocessing means:
+cleaning and preparing raw data before training the ML model.
+Raw real-world data is usually:
+incomplete,
+messy,
+inconsistent,
+duplicated,
+noisy.
+
+So before training:
+we must prepare the data properly.
+
+Real Industry Example
+Suppose hospital data contains:
+Age	  Weight	Disease
+25	    70        Yes
+NULL    80  	  No
+40     wrong      Yes
+
+Problems:
+missing values
+invalid entries
+inconsistent format
+Model cannot learn properly from this.
+
+
+2. Major Steps in Data Preprocessing
+Step 1 — Data Cleaning
+We remove or fix:
+missing values
+duplicate rows
+wrong entries
+noisy data
+Missing Values
+
+Example:
+Age	    Salary
+25	    50000
+NULL	60000
+
+NULL values create problems.
+Solutions:
+remove rows,
+replace using mean,
+replace using median,
+replace using mode.
+
+Mean Formula
+Mean=∑x/n
+
+Why Median is Sometimes Better
+If data has outliers:
+Salary
+30000
+35000
+40000
+5000000
+Mean becomes distorted.
+Median is more stable.
+
+Step 2 — Encoding Categorical Data
+Models work mainly with numbers.
+Text like:
+Male/Female
+Yes/No
+Red/Blue
+must be converted into numeric form.
+Example:
+Gender
+Male
+Female
+Encoding:
+Gender
+0
+1
+
+
+Step 3 — Feature Scaling
+Important concept.
+Suppose features are:
+Age	Salary
+25	50000
+30	80000
+
+Problem:
+salary dominates because values are much larger.
+Some algorithms become biased.
+So we scale features.
+This transforms data around common scale.
+
+
+Step 4 — Train-Test Split
+VERY IMPORTANT.
+We divide dataset into:
+training data
+testing data
+
+Typical split:
+80% training
+20% testing
+
+Purpose:
+evaluate generalization.
+Visualization of Workflow
+Raw Data→Cleaning→Preprocessing→Training→Testing
+Important Industry Insight
+Most beginners think:
+“algorithm is everything.”
+Reality:
+data quality matters more.
+Experienced ML engineers spend huge time on:
+preprocessing,
+feature engineering,
+data understanding.
+
+
+3. Feature Engineering
+One of the MOST valuable ML skills.
+Definition:
+creating useful input features from raw data.
+Example:
+From:
+date of birth
+You create:
+age
+From:
+timestamp
+You create:
+day,
+month,
+weekday,
+season.
+Good features = better model.
+
+
+4. Outliers
+Outliers are abnormal/extreme values.
+Example:
+Most salaries:
+30k–80k
+One salary:
+2 crore
+This can distort learning.
+Why Preprocessing Matters
+Without preprocessing:
+model accuracy drops,
+overfitting increases,
+training becomes unstable.
+Important Interview Point
+
+Algorithms needing scaling:
+KNN
+SVM
+K-Means
+Gradient Descent based models
+Algorithms less affected:
+Decision Trees
+Random Fores

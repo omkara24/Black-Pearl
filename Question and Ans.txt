@@ -1,0 +1,170 @@
+1. Question
+Suppose:
+study hours
+exam marks
+are given in dataset.
+Is this:
+supervised learning,
+unsupervised learning,
+or reinforcement learning?
+And why?
+
+Your Answer
+Supervised learning since data is already labeled and we have to make prediction.
+
+Correct Explanation
+This is:
+Supervised Learning
+Because:
+input = study hours
+output = exam marks
+We already know correct outputs.
+Relationship:
+X→Y
+
+This is also:
+Regression
+because marks are continuous values.
+
+
+2. Question
+Netflix wants to group users based on:
+watch history,
+genres,
+behavior,
+watch time.
+There are NO labels.
+Which type of ML?
+Which algorithm can be used?
+
+Your Answer
+Unsupervised learning because we need to identify patterns and group data. We can use clustering or K-Means.
+
+Correct Explanation
+Corcect.
+This is:
+Unsupervised Learning
+because:
+no labels exist,
+system finds hidden groups automatically.
+Algorithm:
+K-Means Clustering
+Core idea:
+Similar Data Points→Same Cluster
+
+
+3. Question
+Dataset:
+Study Hours	Marks
+1	        20
+2	        40
+3	        60
+4	        80
+If student studies for 5 hours:
+what should model predict?
+what pattern exists?
+Your Answer
+
+You initially thought:
+Reinforcement learning because prediction depends on environment and student conditions.
+
+Correct Explanation
+Actually this is:
+Supervised Learning → Regression
+Visible pattern:
+Hours	Marks
+1	20
+2	40
+3	60
+4	80
+Every extra hour:
++20 marks
+Equation:
+y=20x
+Prediction for:
+5 hours = 100 marks
+
+
+4. Question
+Does a model really “understand” like humans?
+Or is something mathematical happening internally?
+Your Answer
+Model identifies patterns from data and retrains using training data.
+Correct Explanation:
+Correct direction.
+Actually models:
+do NOT think like humans,
+do NOT understand emotions or meaning.
+Internally they:
+optimize parameters,
+reduce prediction error,
+learn mathematical relationships.
+Training process:
+Error=Actual Output−Predicted Output
+Goal:
+minimize error.
+
+
+5. Question
+Suppose:
+training accuracy = 99%
+testing accuracy = 52%
+What problem is happening?
+
+Your Answer
+Model overtrained on training data and fails on new patterns.
+
+Correct Explanation
+Correct.
+Problem:
+Overfitting
+Meaning:
+model memorized training data,
+failed to generalize.
+Danger:
+poor real-world performance.
+
+
+6. Question
+For house price prediction:
+what are input features?
+what is output label?
+
+Your Answer
+Location and house details are inputs.
+
+Correct Explanation
+Correct.
+Features (Inputs)
+Examples:
+size
+location
+bedrooms
+parking
+
+
+7. Question
+Dataset:
+Age	Salary
+25	40000
+26	NULL
+27	45000
+How can we handle NULL values?
+
+Your Answer
+Replace using mean or median or remove row/column.
+
+Correct Explanation
+Correct.
+Possible methods:
+remove rows
+remove columns
+replace with mean
+replace with median
+replace with mode
+Mean example:
+(40000+45000)/2
+=42500
+Best choice here:
+mean/median replacement
+because dataset is small.

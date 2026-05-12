@@ -17,6 +17,9 @@ Ganesh Kadam(Owner of Bank)
 Vaibhav Pande(Poet)
 <br>
 Kajal Ghogare(Topper)
+<br>
+Shravani Barge(Cartoon)
+<br>
 Still Growing.....
 <br>
 Our Motive is to explore the world of technology and have fun.

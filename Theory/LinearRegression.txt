@@ -1,0 +1,167 @@
+Linear Regression
+This is one of the MOST important algorithms in ML.
+
+Why?
+Because it teaches:
+prediction,
+loss,
+optimization,
+gradient descent,
+training logic,
+regression fundamentals.
+
+If you deeply understand Linear Regression:
+many ML concepts become easier later.
+
+1. What is Linear Regression?
+Linear Regression is a supervised learning algorithm used for:
+predicting continuous numerical values.
+
+Examples:
+house price prediction
+salary prediction
+sales prediction
+temperature prediction
+Core Idea
+The algorithm tries to find:
+a best-fit straight line through data.
+
+Basic Equation
+y=wx+b
+
+Where:
+x = input feature
+w = weight/slope
+b = bias/intercept
+y = predicted output
+
+Example
+Suppose:
+study hours = input
+marks = output
+Dataset:
+
+Hours	Marks
+1	    20
+2	    40
+3	    60
+Model learns relationship:
+more study hours → more marks
+
+
+2. Meaning of Weight (w)
+Weight tells:
+how strongly input affects output.
+Example:
+if study hours strongly affect marks,
+weight becomes large.
+Positive Weight
+
+If:
+input increases,
+output also increases,
+then slope is positive.
+Example:
+study hours ↑ → marks ↑
+Negative Weight
+If:
+input increases,
+output decreases,
+then slope is negative.
+Example:
+smoking ↑ → health score ↓
+
+
+3. Meaning of Bias (b)
+Bias shifts prediction line.
+Without bias:
+line forced through origin.
+Bias gives flexibility.
+Example
+Suppose equation:
+y=20x+10
+For:
+x=2
+Prediction:
+y=20(2)+10=50
+
+
+4. Goal of Linear Regression
+Find best:
+weight,
+bias
+such that prediction error becomes minimum.
+Visualization Intuition
+Good regression line:
+passes close to most points,
+captures trend properly.
+
+
+5. Residuals (VERY IMPORTANT)
+Residual means:
+difference between actual and predicted value.
+Example
+Actual marks: 90
+Predicted: 85
+Residual: 5
+
+
+6. Cost Function
+Linear Regression commonly uses:
+Mean Squared Error (MSE)
+Goal: minimize MSE.
+
+
+7. Best Fit Line
+The “best” line is:
+line with minimum total error.
+Gradient Descent helps achieve this.
+
+
+8. Assumptions of Linear Regression
+VERY important for interviews.
+A) Linear Relationship
+Input and output should have roughly linear relationship.
+B) No Extreme Outliers
+Outliers can distort line badly.
+C) Independent Observations
+Data points should not heavily depend on each other.
+D) Constant Variance
+Error spread should remain stable.
+
+
+9. Advantages of Linear Regression
+simple
+fast
+interpretable
+easy to implement
+good baseline model
+
+
+10. Limitations
+poor for complex nonlinear patterns
+sensitive to outliers
+assumes linearity
+Real Industry Insight
+
+Even advanced companies still use Linear Regression because:
+
+interpretability matters,
+fast training,
+useful baseline,
+works surprisingly well on structured data.
+Important Interview Questions
+
+You should now know:
+
+Why use regression?
+Meaning of slope/weight?
+Meaning of bias?
+Why MSE?
+What are residuals?
+Why scaling may help?
+Difference between regression and classification?
+Important Mental Model
+
+Linear Regression is basically:
+fitting a mathematical relationship between variables.
